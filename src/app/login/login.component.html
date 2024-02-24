@@ -8,99 +8,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Login</title>
 </head>
-<body>
-<div class="login-3">
-  <div class="main">
-    <div class="logo-container">
-      <div class="your-logo">Aftas Club </div>
-      <div class="if-absent-frame">
-        <div class="email-input">
-          <div class="email-input-frame">
-            <div class="email-input1">
-              <h2 class="sign-in">Sign in</h2>
-              <div class="password-input">
-                <div class="if-you-dont">
+  <body>
+    <div class="loginContainer container-fluid row justify-content-between align-items-center m-auto">
+      <div class="main col-md-5 mx-auto align-items-center justify-content-between">
+        <div class="formulaire d-flex justify-content-center">
+          <div class="formHeader">
+            <div class="d-flex flex-column gap-5 justify-content-center w-100">
+              <h2 class="fw-bold text-dark text-center">Sign in</h2>
+                <div class="if-you-dont text-dark text-center" style="font-size: 18px;">
                   If you don’t have an account register
                 </div>
-                <div class="you-can-register-container">
-                  <span class="you-can">You can </span>
-                  <a href="#" class="register-here">Register here !</a>
+                <div class="you-can-register-container text-center">
+                  <span class="you-can text-dark" style="font-size: 18px;">You can </span>
+                  <a href="#" class="register-here" style="font-size: 18px;">Register here !</a>
+                </div>
+              <form class="d-flex gap-5 flex-column">
+                <div class="emailGroup">
+                  <div class="email">Email</div>
+                  <div class="input">
+                    <img class="message-1-icon" alt="" src="./assets/images/mail-24.png"/>
+                    <input class="enter-your-email" placeholder="Enter your email address " type="email"/>
+                  </div>
+                  <div class="rectangle-shape"></div>
+                </div>
+                <div class="pass">
+                  <div class="pass-label">
+                    <div class="password">Password</div>
+                  </div>
+                  <div class="password-input1">
+                    <div class="email-input2">
+                      <div class="input-fields">
+                        <img class="padlock-1-icon" alt="" src="./assets/images/password-24.png"/>
+                        <input class="enter-your-password" placeholder="Enter your password" type="password"/>
+                      </div>
+                      <img class="invisible-1-icon" alt="" src="./assets/images/hide-24.png"/>
+                    </div>
+                    <div class="rectangle-shape"></div>
+                  </div>
+                  <div class="lastSection">
+                    <div class="remember-me">
+                      <input class="checkbox-group" type="checkbox" />
+                      <div class="rememebr-me">Rememebr me</div>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot Password ?</a>
+                  </div>
+                </div>
+                <div class="social-login-group">
+                <button class="rectangle-parent">
+                  <div class="login">Login</div>
+                </button>
+                <div class="or-link">
+                  <div class="or-continue-with">or continue with</div>
+                  <div class="social-media-buttons">
+                    <img class="facebook-icon" alt="" src="./assets/images/facebook-48.png"/>
+                    <img class="apple-icon" alt="" src="./assets/images/apple-48.png"/>
+                    <img class="google-icon" alt="" src="./assets/images/google-48.png"/>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="email-parent">
-            <div class="email">Email</div>
-            <div class="input-frame">
-              <img class="message-1-icon" alt="" src="./assets/images/mail-24.png"/>
-              <input class="enter-your-email" placeholder="Enter your email address " type="email"/>
-            </div>
-            <div class="rectangle-shape"></div>
-          </div>
-          <div class="secondary-frame">
-            <div class="password-frame">
-              <div class="password">Password</div>
-            </div>
-            <div class="password-input1">
-              <div class="email-input2">
-                <div class="input-fields">
-                  <img class="padlock-1-icon" alt="" src="./assets/images/password-24.png"/>
-                  <input class="enter-your-password" placeholder="Enter your password" type="password"/>
-                </div>
-                <img class="invisible-1-icon" alt="" src="./assets/images/hide-24.png"/>
-              </div>
-              <div class="rectangle-shape"></div>
-            </div>
-            <div class="login-frame">
-              <div class="remember-me">
-                <input class="checkbox-group" type="checkbox" />
-                <div class="rememebr-me">Rememebr me</div>
-              </div>
-              <a href="#" class="forgot-password">Forgot Password ?</a>
-            </div>
-          </div>
-          <div class="social-login-group">
-            <button class="rectangle-parent">
-              <div class="frame-child"></div>
-              <div class="login">Login</div>
-            </button>
-            <div class="or-link">
-              <div class="or-continue-with">or continue with</div>
-              <div class="social-media-buttons">
-                <img class="facebook-icon" alt="" src="./assets/images/facebook-48.png"/>
-                <img class="apple-icon" alt="" src="./assets/images/apple-48.png"/>
-                <img class="google-icon" alt="" src="./assets/images/google-48.png"/>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="rectangle-group">
-    <div class="frame-item"></div>
-    <div class="group-frame">
-      <div class="phone-input">
-        <div class="social-media-icons">
-          <img class="phone-call-1-icon" alt="" src="./assets/images/phone-50.png"/>
-
-          <div class="empty-space">+212 6 37 54 27 18</div>
+      <div class="rectangle-group col-md-7">
+        <div class="social">
+          <div class="phone-input">
+            <div class="social-media-icons">
+              <img class="phone-call-1-icon" alt="" src="./assets/images/phone-50.png"/>
+              <div class="empty-space">+212 6 37 54 27 18</div>
+            </div>
+            <div class="sally-component">
+              <img class="saly-10-icon" alt="" src="./assets/images/login.png"/>
+            </div>
+          </div>
         </div>
-        <div class="sally-component">
-          <img
-            class="saly-10-icon"
-            loading="eager"
-            alt=""
-            src="./assets/images/login.png"
-          />
+        <div class="signin-label">
+          <h1 class="sign-in-to">Unlock the depths of adventure</h1>
+          <div class="lorem-ipsum-is">Sign in to Club AFTAS for thrilling underwater competitions!</div>
         </div>
       </div>
     </div>
-    <div class="signin-label">
-      <h1 class="sign-in-to">Unlock the depths of adventure</h1>
-      <div class="lorem-ipsum-is">Sign in to Club AFTAS for thrilling underwater competitions!</div>
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
