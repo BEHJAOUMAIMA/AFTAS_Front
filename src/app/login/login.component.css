@@ -219,6 +219,17 @@
   align-items: flex-end;
   justify-content: flex-start;
   padding: 0 0 11px;
+  gap: 9px 0;
+}
+.frame-child {
+  height: 53px;
+  width: 429px;
+  position: relative;
+  border-radius: 32px;
+  background-color: #0c21c1;
+  box-shadow: 0 4px 26px rgba(0, 0, 0, 0.25);
+  display: none;
+  max-width: 100%;
 }
 .login {
   position: relative;
@@ -298,7 +309,10 @@
   align-items: flex-end;
   gap: 49px 0;
 }
+.emailGroup{
+   gap: 9px 0;
 
+ }
 .formHeader {
   font-size: 13px;
   color: #999;
@@ -491,7 +505,6 @@
     gap: 84px;
     padding-left: 20px;
     padding-bottom: 40px;
-    box-sizing: border-box;
   }
   .loginContainer {
     gap: 0 130px;
